@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: CONSUMER-SERVICE
+# Below configuration details pass using java config class 
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9092  # indicating a Kafka server running on the local machine on port 9092
+#      group-id: emp_consumer
+# Defines the class used to serialize the key of the message being sent. meaning the keys are serialized as strings.
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+# Defines the class used to serialize the value of the message being sent. meaning the values are serialized as strings.
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+#      properties:
+#        spring:
+#          json:
+#            trusted:
+#              packages: com.cts.publisher.dto
+
+server:
+  port: 8082
+  servlet:
+    context-path: /api
